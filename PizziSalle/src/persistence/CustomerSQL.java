@@ -1,6 +1,6 @@
 package persistence;
 
-import model.Customer;
+import model.entities.Customer;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -27,7 +27,6 @@ public class CustomerSQL {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            // Handle exceptions appropriately in a real-world application
         }
     }
 

@@ -40,52 +40,64 @@ public class View {
                 20. Carbonara deluxe (Carbonara sauce, bacon, onion, mushrooms, goat cheese & honey)""";
 
     private static final String SELECT_EXTRA_INGREDIENTS = """
-        Would you like to add more ingredients to the pizza?
+        \nWould you like to add more ingredients to the pizza?
         Available ingredients:
-                1. Ham
-                2. Pineapple
-                3. Chicken
-                4. Bacon
-                5. Frankfurt
-                6. Egg
-                7. Sausage
-                8. Onion
-                9. Miniburgers
-                10. Tuna
-                11. Peperoni
-                12. Olives
-                13. BBQ Sauce
-                14. Cheddar
-                15. Roquefort cheese
-                16. Tomato slices
-                17. Anchovies
-                18. Prawns
-                19. Beef
-                20. Carbonara sauce
-                21. Mushrooms
-                22. “Jamón Serrano”
-                23. Brie
-                24. Mozzarella
-                25. Emmental
-                26. Roquefort
-                27. Bell pepper
-                28. Artichoke
-                29. Goat cheese
-                30. “Sobrassada”
-                31. Honey
+                1. Tomato sauce
+                2. Cheese
+                3. Ham
+                4. Pineapple
+                5. Chicken
+                6. Bacon
+                7. Frankfurt
+                8. Egg
+                9. Sausage
+                10. Onion
+                11. Miniburgers
+                12. Tuna
+                13. Peperoni
+                14. Olives
+                15. BBQ Sauce
+                16. Cheddar
+                17. Roquefort
+                18. Tomato slices
+                19. Anchovies
+                20. Prawns
+                21. Beef
+                22. Carbonara sauce
+                23. Mushrooms
+                24. “Jamón Serrano”
+                25. Brie
+                26. Mozzarella
+                27. Emmental
+                28. Bell pepper
+                29. Artichoke
+                30. Goat cheese
+                31. “Sobrassada”
+                32. Honey
                 
-                32. None
+                33. None
                 
         Please enter the number of the ingredient you want to add:\s""";
         
 
     private static final String SELECT_CRUST_TYPE = """
-        Available crust types:
+        \nAvailable crust types:
                 1. Original
                 2. Thin
                 3. Sicilian
                 
         Please enter the number of the crust type you want (Original by default):\s""";
+
+    private static final String SELECT_DRINK_MENU = """
+        \nAvailable drinks:
+                1. Water
+                2. Soda
+                3. Beer (only for adults)
+                
+                4. None
+       
+        Please enter the number of the drink you want:\s""";
+
     private final Scanner scanner;
 
         public View() {
@@ -134,4 +146,7 @@ public class View {
         }
 
 
+    public void showDrinkMenu() {
+        System.out.print(SELECT_DRINK_MENU);
+    }
 }

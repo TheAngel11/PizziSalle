@@ -1,4 +1,4 @@
-package model;
+package model.entities;
 
 public class Customer {
         private String name;
@@ -48,6 +48,15 @@ public class Customer {
 
         public String getDelegation() {
                 return delegation;
+        }
+
+        @Override
+        public String toString() {
+                return "\n\tFull name: " + name + " " + surname1 + " " + surname2 +
+                        "\n\tPhone: " + phone +
+                        "\n\tAddress: " + address +
+                        "\n\tFirstOrder? " + isFirstOrder +
+                        "\n\tDelegation: " + delegation + "\n";
         }
 }
 
